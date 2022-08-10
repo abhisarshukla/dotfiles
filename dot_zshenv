@@ -1,0 +1,8 @@
+. "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export EDITOR="nvim"
+
+if [[ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]]; then
+  source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi
