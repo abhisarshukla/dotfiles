@@ -1,0 +1,32 @@
+[alias]
+  a = add
+  ci = commit
+  civ = commit --no-verify
+  cm = commit -m
+  cmv = commit --no-verify -m
+  ca = commit --amend
+  cav = commit --amend --no-verify
+  co = checkout
+  d = diff
+  ds = -c delta.side-by-side=true diff
+  l = log --relative-date --graph --abbrev-commit -10
+  ll = log --relative-date --graph --abbrev-commit
+  p = push
+  s = status -s
+  st = status
+	fame = !python -m gitfame
+[format]
+  pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+[core]
+  pager = delta
+	longpaths = true
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+  line-numbers = true
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
