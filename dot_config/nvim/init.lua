@@ -1,5 +1,6 @@
-require 'user.plugins'
-require 'user.options'
-require 'user.keymaps'
-require 'user.windows'
-require 'user.colorschemes'
+require "user.plugins"
+require "user.options"
+require "user.keymaps"
+require "user.windows"
+require "user.colorschemes"
+require "user.lsp"
