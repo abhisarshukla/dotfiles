@@ -9,16 +9,7 @@ lsp_zero.setup()
 local config = {
   -- enable virtual text
   virtual_text = {
-    prefix = "",
-    format = function (diagnostic)
-      local icons = {
-       [vim.diagnostic.severity.ERROR] =  "",
-       [vim.diagnostic.severity.WARN] =  "喝",
-       [vim.diagnostic.severity.INFO] =  "ﱤ",
-       [vim.diagnostic.severity.HINT] = "",
-      }
-      return string.format("%s %s", icons[diagnostic.severity], diagnostic.message)
-    end
+    source = "if_many",
   },
   --disable signs
   signs = false,

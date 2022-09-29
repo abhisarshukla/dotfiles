@@ -22,6 +22,9 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- required by a lot of plugins
+  use 'nvim-lua/plenary.nvim'
+
   -- LSP / Linting / Formatting / DAP setup
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -45,7 +48,6 @@ return require('packer').startup(function(use)
 
       -- linting / formatting
       {'jose-elias-alvarez/null-ls.nvim'},
-      {'jayp0521/mason-null-ls.nvim'},
 
       -- DAP
       {'mfussenegger/nvim-dap'},

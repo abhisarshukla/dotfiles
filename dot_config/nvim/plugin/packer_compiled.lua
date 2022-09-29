@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/abhisar/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
-  ["mason-null-ls.nvim"] = {
-    loaded = true,
-    path = "/home/abhisar/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
-    url = "https://github.com/jayp0521/mason-null-ls.nvim"
-  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/abhisar/.local/share/nvim/site/pack/packer/start/mason.nvim",
@@ -168,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/abhisar/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/abhisar/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["windows.nvim"] = {
     loaded = true,
