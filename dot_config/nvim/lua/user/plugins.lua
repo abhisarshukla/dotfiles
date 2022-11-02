@@ -54,6 +54,15 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- Explorer
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
 
