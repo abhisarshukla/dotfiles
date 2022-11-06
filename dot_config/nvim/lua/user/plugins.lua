@@ -25,6 +25,12 @@ return require('packer').startup(function(use)
   -- required by a lot of plugins
   use 'nvim-lua/plenary.nvim'
 
+  -- Treesitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  -- Improve default neovim UI
+  use {'stevearc/dressing.nvim'}
+
   -- LSP / Linting / Formatting / DAP setup
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -63,6 +69,14 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  -- Mnemonic key binding
+  use 'folke/which-key.nvim'
+
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    requires = { {'nvim-telescope/telescope-fzy-native.nvim'} }
+  }
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
 

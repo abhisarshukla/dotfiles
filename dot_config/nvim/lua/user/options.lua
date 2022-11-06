@@ -36,10 +36,11 @@ local options = {
   winwidth = 10,                           -- minimum number of columns for current window
   winminwidth = 10,                        -- minimum number of columns of columns for a window, when it is not current window
   equalalways = false,                     -- no same width windows after splitting or closing a window
+  foldmethod = "expr",
+  foldenable = false,
 }
 
 vim.opt.shortmess:append "c"
-
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
