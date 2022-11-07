@@ -9,14 +9,12 @@ nvim_tree.setup {
   select_prompts = false,
   sync_root_with_cwd = true,
   view = {
+    width = 30,
     adaptive_size = true,
+    centralize_selection = true,
   },
   renderer = {
     special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", "package.json", "pom.xml" },
-  },
-  hijack_directories = {
-    enable = true,
-    auto_open = true,
   },
   update_focused_file = {
     enable = true,

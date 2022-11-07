@@ -69,6 +69,16 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  -- Bufferline
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use { "moll/vim-bbye" }
+
+  -- Statusline
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
   -- Mnemonic key binding
   use 'folke/which-key.nvim'
 
@@ -77,6 +87,13 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
     requires = { {'nvim-telescope/telescope-fzy-native.nvim'} }
   }
+
+  -- Git stuff
+  use { 'TimUntersberger/neogit' }
+  use { 'sindrets/diffview.nvim' }
+  use { 'lewis6991/gitsigns.nvim' }
+
+
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
 

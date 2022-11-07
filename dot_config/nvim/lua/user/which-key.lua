@@ -12,6 +12,8 @@ which_key.setup {
 
 which_key.register({
   e = { '<cmd>NvimTreeToggle<cr>', 'explorer' },
+  h = { '<cmd>nohl<cr>', 'no highlight' },
+  c = { '<cmd>Bdelete!<cr>', 'close buffer' },
   f = {
     name = 'find',
     f = { "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -33,5 +35,6 @@ which_key.register({
     name = 'git',
     c = { "<cmd>Telescope git_commits<cr>", 'commits' },
     b = { "<cmd>Telescope git_bcommits<cr>", 'buffer commits' },
+    d = { "", "" },
   }
 }, { prefix = '<leader>' })
