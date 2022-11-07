@@ -23,4 +23,9 @@ nvim_tree.setup {
     enable = true,
     show_on_dirs = true,
   },
+  actions = {
+    open_file = {
+      resize_window = true,
+    },
+  },
 }
