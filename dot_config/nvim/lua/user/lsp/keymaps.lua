@@ -6,6 +6,10 @@ end
 local opts = { noremap = true, silent = true }
 local keymap = vim.keymap.set
 
+keymap("n", "gl", vim.diagnostic.open_float, opts)
+keymap("n", "[d", vim.diagnostic.goto_prev, opts)
+keymap("n", "]d", vim.diagnostic.goto_next, opts)
+
 lsp_zero.on_attach(function(client, bufnr)
   keymap("n", "gd", "<cmd>lua require('telescope.builtin').lsp_definitions(require('telescope.themes').get_cursor())<cr>", opts)
   keymap("n", "gi", "<cmd>lua require('telescope.builtin').lsp_implementations(require('telescope.themes').get_cursor())<cr>", opts)

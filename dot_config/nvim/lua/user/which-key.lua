@@ -35,6 +35,19 @@ which_key.register({
     name = 'git',
     c = { "<cmd>Telescope git_commits<cr>", 'commits' },
     b = { "<cmd>Telescope git_bcommits<cr>", 'buffer commits' },
-    d = { "", "" },
-  }
+    d = {
+      name = 'diff',
+      o = { "<cmd>DiffviewOpen<cr>", "open" },
+      c = { "<cmd>DiffviewClose<cr>", "close" },
+      f = { "<cmd>DiffviewFileHistory %<cr>", "file" },
+      F = { "<cmd>DiffviewFileHistory<cr>", "all file" },
+    },
+    l = { "<cmd>Gitsigns toggle_current_line_blame", "blame" },
+    n = { "<cmd>Neogit<cr>", "neogit" },
+  },
 }, { prefix = '<leader>' })
+
+which_key.register({
+  h = { '<cmd>nohl<cr>', 'no highlight' },
+
+}, { prefix = '<leader>', mode = 'v' })

@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local disabled_filetypes = { 'DiffviewFiles', 'NvimTree', 'NeogitStatus', 'NeogitRebaseTodo', 'NeogitPopup', 'NeogitNotification',
+local disabled_filetypes = { 'help','DiffviewFiles', 'NvimTree', 'NeogitStatus', 'NeogitRebaseTodo', 'NeogitPopup', 'NeogitNotification',
   'NeogitLogView', 'NeogitLog', 'NeogitCommandHistory', 'NeogitCommitView', 'NeogitCommitMessage' }
 
 

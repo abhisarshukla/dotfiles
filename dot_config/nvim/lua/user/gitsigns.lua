@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 gitsigns.setup {
-  word_diff  = true, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {
     interval = 1000,
     follow_files = true
