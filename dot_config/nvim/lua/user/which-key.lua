@@ -42,11 +42,12 @@ which_key.register({
       f = { "<cmd>DiffviewFileHistory %<cr>", "file" },
       F = { "<cmd>DiffviewFileHistory<cr>", "all file" },
     },
-    l = { "<cmd>Gitsigns toggle_current_line_blame", "blame" },
+    l = { "<cmd>Gitsigns blame_line<cr>", "blame" },
     n = { "<cmd>Neogit<cr>", "neogit" },
   },
 }, { prefix = '<leader>' })
 
+-- only dummy
 which_key.register({
   h = { '<cmd>nohl<cr>', 'no highlight' },
 
